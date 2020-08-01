@@ -1,5 +1,5 @@
-const Query =  {
-    users(parent, args, {db}, info) {
+const Query = {
+    users(parent, args, { db }, info) {
         if (!args.query) {
             return db.users
         }
@@ -8,7 +8,7 @@ const Query =  {
             return user.name.toLowerCase().includes(args.query.toLowerCase())
         })
     },
-    posts(parent, args, {db}, info) {
+    posts(parent, args, { db }, info) {
         if (!args.query) {
             return db.posts
         }
@@ -19,7 +19,7 @@ const Query =  {
             return isTitleMatch || isBodyMatch
         })
     },
-    comments(parent, args, {db}, info) {
+    comments(parent, args, { db }, info) {
         return db.comments
     },
     me() {
@@ -39,4 +39,4 @@ const Query =  {
     }
 }
 
-export {Query as default}
+export { Query as default }

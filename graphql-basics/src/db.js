@@ -52,7 +52,7 @@ const comments = [{
     id: '105',
     text: 'Nevermind. I got it to work.',
     author: '1',
-    post: '11'
+    post: '12'
 }]
 
 const db = {
@@ -60,3 +60,5 @@ const db = {
     posts,
     comments
 }
+
+export { db as default }
