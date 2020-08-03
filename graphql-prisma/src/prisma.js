@@ -6,7 +6,8 @@ const prisma = new Prisma({
     //to the correct prisma endpoint
 
     typeDefs: "src/generated/prisma.graphql",
-    endpoint: "http://192.168.99.100:4466" //actual url where prisma lives
+    endpoint: "http://192.168.99.100:4466", //actual url where prisma lives
+    secret: "tuvalet_kagidi"
 })
 
 
