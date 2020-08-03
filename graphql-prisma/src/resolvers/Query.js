@@ -1,5 +1,8 @@
 const Query = {
-    users(parent, args, { db }, info) {
+    users(parent, args, {  prisma }, info) {
+
+        return prisma.query.users(null, info)
+        /*
         if (!args.query) {
             return db.users
         }
@@ -7,8 +10,13 @@ const Query = {
         return db.users.filter((user) => {
             return user.name.toLowerCase().includes(args.query.toLowerCase())
         })
+        */
     },
-    posts(parent, args, { db }, info) {
+    posts(parent, args, { prisma }, info) {
+
+        return prisma.query.posts(null, info)
+
+        /*
         if (!args.query) {
             return db.posts
         }
@@ -17,7 +25,7 @@ const Query = {
             const isTitleMatch = post.title.toLowerCase().includes(args.query.toLowerCase())
             const isBodyMatch = post.body.toLowerCase().includes(args.query.toLowerCase())
             return isTitleMatch || isBodyMatch
-        })
+        })*/
     },
     comments(parent, args, { db }, info) {
         return db.comments

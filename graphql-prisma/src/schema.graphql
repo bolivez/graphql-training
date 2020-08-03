@@ -28,12 +28,10 @@ type Subscription {
 input CreateUserInput {
     name: String!
     email: String!
-    age: Int
 }
 input UpdateUserInput {
     name: String
     email: String
-    age: Int
 }
 
 
@@ -74,7 +72,6 @@ type User {
     id: ID!
     name: String!
     email: String!
-    age: Int
     posts: [Post!]!
     comments: [Comment!]!
 }

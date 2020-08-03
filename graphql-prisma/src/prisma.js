@@ -10,10 +10,10 @@ const prisma = new Prisma({
 })
 
 
+export { prisma as default }
 
 
-
-
+/*
 
 
 const createPostForUser = async (authorId, data ) => {
@@ -37,7 +37,7 @@ const createPostForUser = async (authorId, data ) => {
     }, " { author { id name email posts { id title body published } } } ")
 
     return post.author
-}/*
+}
 createPostForUser("ckdcf1dz600290718t8ax0gj7", {
     title: "das title",
     body: "das body",
@@ -47,7 +47,7 @@ createPostForUser("ckdcf1dz600290718t8ax0gj7", {
 }).catch((error) => {
     console.log(error.message)
 })
-*/
+
 
 
 
@@ -78,15 +78,13 @@ updatePostForUser("ckddhdt5p003m0718mfl4zjwv", {
     console.log(JSON.stringify(post, undefined, 2))
 }).catch((error) => {
     console.log(error.message)
-})*/
+})
 
 
 
 
 
-
-
-
+*/
 
 
 
