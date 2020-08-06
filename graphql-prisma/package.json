@@ -13,6 +13,8 @@
   "dependencies": {
     "@graphql-cli/codegen": "^1.17.7",
     "@graphql-codegen/schema-ast": "^1.17.7",
+    "@graphql-tools/graphql-file-loader": "^6.0.16",
+    "@graphql-tools/load": "^6.0.16",
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
